@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    font-family: tahoma;
+}
+.header {
+    background-color: rgba(12, 72, 4, 0.064);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+
+}
+li,a {
+    font-weight: 500;
+    font-size:20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor:pointer;
+    border-radius: 50px;
+}
+.imagenlogo {
+    cursor:pointer;
+    padding-left: 10px;
+} 
+.lista {
+    list-style: none ;
+}
+li {
+    display:inline-block;
+}
+.lista li a{
+    border: 5px;
+    transition: all 0.5s ease 0s;
+    padding: 5px 5px;
+}
+.lista li a:hover {
+    background-color: rgba(255, 140, 0, 0.885);
+    
+}
+.fondopagina {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+
+.sectionAuto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px ;
+
+    padding-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 100px;
+    
+}
+.nombreAuto {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 280px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+}
+.servicios {
+    background-color: rgba(0, 0, 255, 0.077);
+    text-align: center;
+    border-radius: 10px;
+    margin-left:500px;
+    margin-right:500px;
+
+
+}
+.sectionTipo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 100px;
+}
+.tipoServ {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-around;
+    padding-left:80px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: rgba(255, 2, 2, 0.175);
+}
+.footer .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding:10px 0px;
+    text-align: center;
+}
+.footer .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .grupo1 .box h2 {
+    color:rgb(11, 48, 13);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo1 .box p {
+    color:rgb(13, 1, 32);
+    margin-bottom: 10px;
+}
+.footer .grupo1 .box .media a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 8px;
+}
