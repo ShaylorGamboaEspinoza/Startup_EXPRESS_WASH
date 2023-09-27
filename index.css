@@ -3,7 +3,7 @@
     font-family: tahoma;
 }
 .header {
-    background-color: rgba(12, 72, 4, 0.064);
+    background-color: rgba(172, 174, 172, 0.684);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,8 +13,8 @@
 }
 li,a {
     font-weight: 500;
-    font-size:20px;
-    color: rgb(0, 0, 0);
+    font-size:18px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor:pointer;
     border-radius: 50px;
@@ -74,6 +74,8 @@ li {
     border-radius: 10px;
     margin-left:500px;
     margin-right:500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 
 }
@@ -95,10 +97,82 @@ li {
     padding-bottom: 20px;
 }
 
+.reseñascard {
+
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.reseñascard .reseñas {
+
+    background-color: rgb(92, 88, 81);
+    display: flex;
+    width: 40%;
+    height:130px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 rgb(255, 5, 5); 
+}
+.reseñascard .reseñas img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+}
+
+.reseñascard .reseñas .contenido-text-card {
+    width: 60%;
+    color: white;
+}
+.reseñascard .reseñas .contenido-text-card h5{
+    font-weight:200%;
+}
+.reseñascard .reseñas .contenido-text-card p{
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.reservacard {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.reservacard .RESERVA{
+    padding-top: 20px;
+    background-color: rgba(255, 91, 9, 0.121);
+    display: flex;
+    width: 25%;
+    height:80px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 rgb(249, 249, 184); 
+}
+.reservacard .RESERVA img {
+    width:50%px;
+    height: 50px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    display: block;
+}
+
+.reservacard .RESERVA .numero {
+    font-size: 40px;
+    width:50%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  
+}
 
 .footer {
     width: 100%;
-    background-color: rgba(255, 2, 2, 0.175);
+    background-color: rgba(86, 50, 50, 0.377);
 }
 .footer .grupo1 {
     width: 100%;
@@ -119,13 +193,13 @@ li {
 }
 
 .footer .grupo1 .box h2 {
-    color:rgb(11, 48, 13);
+    color:rgb(0, 0, 0);
     margin-bottom: 25px;
     font-size: 20px;
 }
 
 .footer .grupo1 .box p {
-    color:rgb(13, 1, 32);
+    color:rgb(2, 0, 5);
     margin-bottom: 10px;
 }
 .footer .grupo1 .box .media a{
