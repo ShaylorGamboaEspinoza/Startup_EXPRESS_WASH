@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
+    max-width: 100%;
 
 }
 li,a {
@@ -21,6 +22,7 @@ li,a {
 .imagenlogo {
     cursor:pointer;
     padding-left: 10px;
+    max-width: 100%;
 } 
 .lista {
     list-style: none ;
