@@ -143,7 +143,7 @@ li {
 }
 
 .reservacard .RESERVA{
-    padding-top: 20px;
+    padding-top: 0;
     background-color: rgba(255, 91, 9, 0.121);
     display: flex;
     width: 25%;
@@ -164,17 +164,19 @@ li {
 }
 
 .reservacard .RESERVA .numero {
-    font-size: 40px;
-    width:50%;
-    color: rgb(0, 0, 0);
-    text-align: center;
-  
+    font-size: 150%;
+    font-weight: 100px;
+    width:100px;
+    color: rgba(0, 0, 0, 0.873);
 }
-
+.clik {
+    text-align: center;
+}
 .footer {
     width: 100%;
     background-color: rgba(86, 50, 50, 0.377);
 }
+
 .footer .grupo1 {
     width: 100%;
     max-width: 1200px;
