@@ -206,8 +206,60 @@ li {
     margin-bottom: 10px;
 }
 .footer .grupo1 .box .media a{
+    background-color: rgba(0, 81, 255, 0.429);
     display: inline-flex;
     text-decoration: none;
-    font-size: 25px;
-    padding: 8px;
+    font-size: 18px;
+    padding: 11px;
+}
+
+@media (max-width: 992px) {
+    .sectionAuto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionTipo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .header {
+        width: 100vw;
+    } */
+
+    .sectionAuto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionTipo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicios {
+     margin: auto;   
+    }
+    
+    .nombreAuto{
+        padding: 0%;
+    }
+
+    .grupo1 {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+}
+
+.derechos {
+    text-align: center;
+
+}
+.derechos div{
+
+    font-weight: 20px;
 }
