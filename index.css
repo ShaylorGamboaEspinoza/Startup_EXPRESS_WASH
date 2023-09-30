@@ -1,101 +1,144 @@
 *{
-    margin:0;
-    font-family: tahoma;
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
-.header {
-    background-color: rgba(172, 174, 172, 0.684);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    max-width: 100%;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
 
+header {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 252, 252);
+    background: -webkit-linear-gradient(to left, hsla(0, 3%, 94%, 0.459), hsla(127, 100%, 2%, 0.664)), url(logo\ de\ express\ wash.JPG);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, hsla(185, 41%, 95%, 0.459), hsla(197, 82%, 67%, 0.601)), url(logo\ de\ express\ wash.JPG);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
 }
-li,a {
-    font-weight: 500;
-    font-size:18px;
-    color: rgb(255, 255, 255);
+nav {
+    text-align: right;
+    padding: 10px 20px 5px 0 ;
+    background-color: rgba(255, 255, 255, 0.532);
+}
+.linksis {
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    font-weight: 100px;
     text-decoration: none;
-    cursor:pointer;
-    border-radius: 50px;
+    margin-right: 10px;
 }
-.imagenlogo {
-    cursor:pointer;
-    padding-left: 10px;
-    max-width: 100%;
-} 
-.lista {
-    list-style: none ;
+.linksis:hover {
+    color:white;
+    padding: 0.2vw;
+    background-color: rgba(35, 105, 135, 0.635);
+    border-radius: 10px;
 }
-li {
-    display:inline-block;
+@media screen and (max-width:992px) {
+    .ancors {
+        padding: 0;
+        margin: 0;
+        border-radius: 0px;
+    }
+    .linksis{
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(98, 88, 88, 0.535);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin: 0;
+    }
+    linksis:hover {
+        color:white;
+        padding: 0.2vw;
+        background-color: rgb(17, 17, 17);
+        border-radius: 10px;
+    }
 }
-.lista li a{
-    border: 5px;
-    transition: all 0.5s ease 0s;
-    padding: 5px 5px;
-}
-.lista li a:hover {
-    background-color: rgba(255, 140, 0, 0.885);
-    
-    
-}
-.fondopagina {
+header .textos-header{
     display: flex;
+    height: 430px;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
-
+    justify-content: end;
+    text-shadow:blue ;
 }
-
-.sectionAuto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px ;
-
-    padding-bottom: 20px;
-    padding-left: 150px;
-    padding-right: 100px;
-    
+.textos-header h1{
+    font-size: 50px;
+    color:#ffffffec;
+    text-align: end ;
 }
-.nombreAuto {
+.textos-header p{
     font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content:space-between;
+    font-weight: 50%;
+    color:#ffffff;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.sectionAuto {
+    padding-top: 80px;
+    gap:30px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
-    padding-left: 280px;
-    padding-right: 200px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+}
+.imags:hover {
+
+    padding: 0.2vw;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(119, 122, 119);
 }
 .servicios {
-    background-color: rgba(0, 0, 255, 0.077);
+    background-color: rgba(139, 139, 142, 0.379);
     text-align: center;
-    border-radius: 10px;
-    margin-left:500px;
-    margin-right:500px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-
+    border-radius: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
 .sectionTipo {
-    display: flex;
-    justify-content:space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-left: 150px;
-    padding-right: 100px;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
 }
-.tipoServ {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content:space-around;
-    padding-left:80px ;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.typeLavado {
+    text-align: center;
 }
+.yotu{
+    text-align: center;
+    align-items: center;
+}
+.serviciotexto{
+    text-align: center;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
 
 .reseñascard {
 
@@ -106,35 +149,32 @@ li {
 
 .reseñascard .reseñas {
 
-    background-color: rgb(92, 88, 81);
+    background-color: rgba(250, 92, 7, 0.1);
     display: flex;
     width: 40%;
-    height:130px;
+    height:180px;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 12px 0 rgb(255, 5, 5); 
+    border-radius: 35px;
+    box-shadow: 0 0 35px 0 rgb(117, 116, 116); 
 }
 .reseñascard .reseñas img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 3px solid white;
+    border: 3px solid rgba(212, 206, 206, 0.617);
     border-radius: 50%;
     display: block;
 }
 
 .reseñascard .reseñas .contenido-text-card {
+    font-style: italic;
     width: 60%;
-    color: white;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
 }
-.reseñascard .reseñas .contenido-text-card h5{
-    font-weight:200%;
-}
-.reseñascard .reseñas .contenido-text-card p{
-    font-weight: 300;
-    padding-top: 20px;
-}
+
+/** RESERVA */
 
 .reservacard {
     display: flex;
@@ -146,12 +186,12 @@ li {
     padding-top: 0;
     background-color: rgba(255, 91, 9, 0.121);
     display: flex;
-    width: 25%;
+    width: 260px;
     height:80px;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 12px 0 rgb(249, 249, 184); 
+    border-radius: 25px;
+    box-shadow: 0 0 33px 0 rgb(60, 60, 58); 
 }
 .reservacard .RESERVA img {
     width:50%px;
@@ -164,14 +204,17 @@ li {
 }
 
 .reservacard .RESERVA .numero {
-    font-size: 150%;
+    font-size: 30px;
     font-weight: 100px;
     width:100px;
-    color: rgba(0, 0, 0, 0.873);
+    color: rgb(0, 0, 0);
 }
 .clik {
     text-align: center;
 }
+
+
+
 .footer {
     width: 100%;
     background-color: rgba(86, 50, 50, 0.377);
@@ -244,6 +287,13 @@ li {
      margin: auto;   
     }
     
+    .reseñascard .reseñas .contenido-text-card {
+        font-style: italic;
+        width: 60%;
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+    }
+
     .nombreAuto{
         padding: 0%;
     }
@@ -251,6 +301,11 @@ li {
     .grupo1 {
         display: flex !important;
         flex-direction: column;
+    }
+    a:hover {
+        color:white;
+        padding: 0.2vw;
+        border-radius: 10px;
     }
 
 }
